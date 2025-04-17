@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty AI Idea Book | University of St. Thomas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Faculty AI Idea Book</h1>
+                <p>University of St. Thomas</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Browse Ideas</a></li>
+                    <li><a href="submit.html">Submit Your Idea</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Discover How St. Thomas Faculty & Staff Are Using AI in Education</h2>
+            <div class="cta-buttons">
+                <a href="submit.html" class="btn primary">Share Your Experience</a>
+                <a href="#ideas" class="btn secondary">Browse Ideas</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="filters" id="filters">
+        <div class="container">
+            <h3>Filter Ideas</h3>
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label for="department">Department</label>
+                    <select id="department">
+                        <option value="">All Departments</option>
+                        <option value="business">Business</option>
+                        <option value="education">Education</option>
+                        <option value="engineering">Engineering</option>
+                        <option value="humanities">Humanities</option>
+                        <option value="sciences">Sciences</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="ai-tool">AI Tool</label>
+                    <select id="ai-tool">
+                        <option value="">All Tools</option>
+                        <option value="chatgpt">ChatGPT</option>
+                        <option value="claude">Claude</option>
+                        <option value="gemini">Gemini</option>
+                        <option value="dall-e">DALL-E</option>
+                        <option value="midjourney">Midjourney</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="use-case">Use Case</label>
+                    <select id="use-case">
+                        <option value="">All Use Cases</option>
+                        <option value="content-creation">Content Creation</option>
+                        <option value="assessment">Assessment</option>
+                        <option value="feedback">Student Feedback</option>
+                        <option value="research">Research</option>
+                        <option value="accessibility">Accessibility</option>
+                    </select>
+                </div>
+                <button id="clear-filters" class="btn secondary small">Clear Filters</button>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Search by keyword...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="ideas" id="ideas">
+        <div class="container">
+            <h3>Faculty AI Ideas</h3>
+            <p class="results-count"><span id="idea-count">6</span> ideas found</p>
+            
+            <div class="ideas-grid" id="ideas-container">
+                <!-- Ideas will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 University of St. Thomas. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

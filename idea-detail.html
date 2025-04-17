@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idea Details | Faculty AI Idea Book</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Faculty AI Idea Book</h1>
+                <p>University of St. Thomas</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Browse Ideas</a></li>
+                    <li><a href="submit.html">Submit Your Idea</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="idea-detail-header">
+        <div class="container">
+            <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to All Ideas</a>
+            <h2 id="idea-title">Loading idea...</h2>
+            <div class="idea-meta">
+                <div class="author">
+                    <i class="fas fa-user"></i>
+                    <span id="idea-author">Loading...</span>
+                </div>
+                <div class="department">
+                    <i class="fas fa-university"></i>
+                    <span id="idea-department">Loading...</span>
+                </div>
+                <div class="date">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span id="idea-date">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="idea-detail-content">
+        <div class="container">
+            <div class="idea-main">
+                <div class="idea-section">
+                    <h3>Description</h3>
+                    <div id="idea-description">Loading description...</div>
+                </div>
+                
+                <div class="idea-section">
+                    <h3>Benefits and Impact</h3>
+                    <div id="idea-benefits">Loading benefits...</div>
+                </div>
+                
+                <div class="idea-section" id="resource-section">
+                    <h3>Resources</h3>
+                    <div id="idea-resource">
+                        <p>Loading resource...</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="idea-sidebar">
+                <div class="sidebar-section">
+                    <h4>AI Tools Used</h4>
+                    <ul class="tags-list" id="ai-tools-list">
+                        <li>Loading...</li>
+                    </ul>
+                </div>
+                
+                <div class="sidebar-section">
+                    <h4>Use Cases</h4>
+                    <ul class="tags-list" id="use-cases-list">
+                        <li>Loading...</li>
+                    </ul>
+                </div>
+                
+                <div class="sidebar-section">
+                    <h4>Tags</h4>
+                    <ul class="tags-list" id="tags-list">
+                        <li>Loading...</li>
+                    </ul>
+                </div>
+                
+                <div class="sidebar-section">
+                    <h4>Contact</h4>
+                    <p>Have questions about this implementation?</p>
+                    <a href="#" id="contact-author" class="btn secondary">Contact Author</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="related-ideas">
+        <div class="container">
+            <h3>Related Ideas</h3>
+            <div class="ideas-grid" id="related-ideas-container">
+                <!-- Related ideas will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 University of St. Thomas. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script src="idea-detail.js"></script>
+</body>
+</html>

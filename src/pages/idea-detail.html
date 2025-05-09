@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idea Details | AI Idea Book</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="../../" class="logo">
+                <img src="../../public/images/logo.png" alt="University of St. Thomas Logo">
+                <div class="logo-text">
+                    <h1>AI Idea Book</h1>
+                    <p>University of St. Thomas</p>
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../../">Browse Ideas</a></li>
+                    <li><a href="https://stthomas.az1.qualtrics.com/jfe/form/SV_7R4vacHBr4S8TjM" target="_blank" rel="noopener noreferrer">Submit Your Idea</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="idea-detail-header">
+        <div class="container">
+            <a href="../../" class="back-link"><i class="fas fa-arrow-left"></i> Back to All Ideas</a>
+            <h2 id="idea-title">Loading idea...</h2>
+            <div class="idea-meta">
+                <div class="author">
+                    <i class="fas fa-user"></i>
+                    <span id="idea-author">Loading...</span>
+                </div>
+                <div class="department">
+                    <i class="fas fa-university"></i>
+                    <span id="idea-department">Loading...</span>
+                </div>
+                <div class="date">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span id="idea-date">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="idea-detail-content">
+        <div class="container">
+            <div class="idea-main">
+                <div class="idea-section">
+                    <h3>Description</h3>
+                    <div id="idea-description">Loading description...</div>
+                </div>
+                
+                <div class="idea-section" id="resource-section">
+                    <div id="idea-resource">
+                        <p>Loading resource...</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="idea-sidebar">
+                <div class="sidebar-section">
+                    <h4>Tags</h4>
+                    <ul class="tags-list" id="tags-list">
+                        <li>Loading...</li>
+                    </ul>
+                </div>
+                
+                <div class="sidebar-section">
+                    <h4>Contact</h4>
+                    <p>Have questions about this implementation?</p>
+                    <a href="#" id="contact-author" class="btn secondary">Contact Author</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="related-ideas">
+        <div class="container">
+            <h3>Related Ideas</h3>
+            <div class="ideas-grid" id="related-ideas-container">
+                <!-- Related ideas are populated here -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 University of St. Thomas. All rights reserved.</p>
+                <a href="#" class="back-to-top" title="Back to Top">
+                    <i class="fas fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/data.js"></script>
+    <script src="../js/idea-detail.js"></script>
+    <script>
+        // Back to Top Button
+        const backToTopButton = document.querySelector('.back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>

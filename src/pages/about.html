@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | AI Idea Book</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="../../" class="logo">
+                <img src="../../public/images/logo.png" alt="University of St. Thomas Logo">
+                <div class="logo-text">
+                    <h1>AI Idea Book</h1>
+                    <p>University of St. Thomas</p>
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../../">Browse Ideas</a></li>
+                    <li><a href="https://stthomas.az1.qualtrics.com/jfe/form/SV_7R4vacHBr4S8TjM" target="_blank" rel="noopener noreferrer">Submit Your Idea</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>About the AI Idea Book</h2>
+        </div>
+    </section>
+
+    <section class="about-content">
+        <div class="container">
+            <div class="about-section">
+                <h3>Our Mission</h3>
+                <p>The AI Idea Book serves as a collaborative platform for University of St. Thomas educators to share innovative approaches to incorporating generative AI in teaching and learning. By fostering an environment of knowledge exchange, we aim to enhance educational experiences, promote best practices, and inspire creative applications of AI technology across disciplines.</p>
+            </div>
+
+            <div class="about-section">
+                <h3>Why Share AI Teaching Ideas?</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4>Inspire Innovation</h4>
+                        <p>Discover new approaches to teaching that you might not have considered.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Build Community</h4>
+                        <p>Connect with colleagues who share your interest in educational technology.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Enhance Learning</h4>
+                        <p>Improve student outcomes through effective AI integration.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h4>Stay Current</h4>
+                        <p>Keep pace with rapidly evolving AI technologies and applications.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-section">
+                <h3>How It Works</h3>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Submit Your Idea</h4>
+                            <p>Share how you're using AI in your teaching through our simple submission form.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Browse Submissions</h4>
+                            <p>Explore ideas from colleagues across departments and disciplines.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Adapt & Implement</h4>
+                            <p>Adapt promising approaches to your own teaching context.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 University of St. Thomas. All rights reserved.</p>
+                <a href="#" class="back-to-top" title="Back to Top">
+                    <i class="fas fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/scripts.js"></script>
+    <script>
+        // Back to Top Button
+        const backToTopButton = document.querySelector('.back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>

@@ -108,6 +108,25 @@ If you run into any issues:
    - Check that all brackets and braces are properly closed
    - Verify that the ID number is unique and one higher than the last idea
 
+### Adding a New Resource File
+
+If your resource is a file (e.g., PDF, Word document, image, video) and not a web URL, you will need to upload it to the project's repository first.
+
+1.  **Navigate to the `public/resources/` directory** in the GitHub interface of the repository.
+2.  **Upload your new file** to this directory.
+3.  **File Naming Convention:** It's best practice to name your file using all lowercase letters and to replace any spaces with hyphens (`-`). For example, a file named "My Resource.pdf" should be named `my-resource.pdf`.
+
+Once the file is uploaded and correctly named, you will reference it in your new idea within `src/js/data.js` as follows:
+
+*   Set the `resourceType` field to the file's type/extension (e.g., `pdf`, `docx`, `png`, `mp4`).
+*   Set the `resourceUrl` field to the path: `/ai-idea-book/public/resources/YOUR-FILE-NAME.EXTENSION`.
+    *   For example, if your file is `my-resource.pdf`, the `resourceUrl` would be `/ai-idea-book/public/resources/my-resource.pdf`.
+
+If your resource is a web URL (like a Panopto video link or an external website), you can:
+
+*   Set the `resourceType` field to `url`.
+*   Set the `resourceUrl` field directly to the web address (e.g., `https://your.panopto.video.url.com`).
+
 ### Supported Resource Types
 
 - PDF Documents (.pdf)

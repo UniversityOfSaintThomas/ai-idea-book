@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Your AI Idea | AI Idea Book</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="../../" class="logo">
+                <img src="../../public/images/logo.png" alt="University of St. Thomas Logo">
+                <div class="logo-text">
+                    <h1>AI Idea Book</h1>
+                    <p>University of St. Thomas</p>
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../../">Browse Ideas</a></li>
+                    <li><a href="https://stthomas.az1.qualtrics.com/jfe/form/SV_7R4vacHBr4S8TjM" class="active" target="_blank" rel="noopener noreferrer">Submit Your Idea</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Share Your AI Teaching Experience</h2>
+        </div>
+    </section>
+
+    <section class="submission-form">
+        <div class="container">
+            <form id="idea-form">
+                <div class="form-group">
+                    <label for="name">Your Name*</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="department">Department*</label>
+                    <select id="department" name="department" required>
+                        <option value="">Select Department</option>
+                        <option value="business">Business</option>
+                        <option value="education">Education</option>
+                        <option value="engineering">Engineering</option>
+                        <option value="humanities">Humanities</option>
+                        <option value="sciences">Sciences</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="title">Title of Your AI Implementation*</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="ai-tools">AI Tools Used*</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="chatgpt" name="ai-tools" value="chatgpt">
+                            <label for="chatgpt">ChatGPT</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="claude" name="ai-tools" value="claude">
+                            <label for="claude">Claude</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="gemini" name="ai-tools" value="gemini">
+                            <label for="gemini">Gemini</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="dall-e" name="ai-tools" value="dall-e">
+                            <label for="dall-e">DALL-E</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="midjourney" name="ai-tools" value="midjourney">
+                            <label for="midjourney">Midjourney</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="other-ai" name="ai-tools" value="other">
+                            <label for="other-ai">Other</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="use-cases">Use Cases*</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="content-creation" name="use-cases" value="content-creation">
+                            <label for="content-creation">Content Creation</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="assessment" name="use-cases" value="assessment">
+                            <label for="assessment">Assessment</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="feedback" name="use-cases" value="feedback">
+                            <label for="feedback">Student Feedback</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="research" name="use-cases" value="research">
+                            <label for="research">Research</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="accessibility" name="use-cases" value="accessibility">
+                            <label for="accessibility">Accessibility</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="description">Description of Your Implementation*</label>
+                    <textarea id="description" name="description" rows="6" required></textarea>
+                    <p class="help-text">Describe how you've used AI in your teaching, including your approach, challenges, and outcomes.</p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="benefits">Benefits and Impact</label>
+                    <textarea id="benefits" name="benefits" rows="4"></textarea>
+                    <p class="help-text">How has this implementation benefited your teaching or student learning?</p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="resource-type">Resource Type*</label>
+                    <select id="resource-type" name="resource-type" required>
+                        <option value="">Select Resource Type</option>
+                        <option value="url">URL/Website</option>
+                        <option value="pdf">PDF Document</option>
+                        <option value="doc">Word Document</option>
+                        <option value="ppt">PowerPoint</option>
+                        <option value="image">Image (PNG, JPG, GIF)</option>
+                        <option value="video">Video</option>
+                        <option value="audio">Audio</option>
+                        <option value="spreadsheet">Spreadsheet</option>
+                        <option value="other">Other File Type</option>
+                        <option value="none">No Resource</option>
+                    </select>
+                </div>
+                
+                <div class="form-group" id="resource-url-group">
+                    <label for="resource-url">Resource URL</label>
+                    <input type="url" id="resource-url" name="resource-url">
+                    <p class="help-text">Link to your resource (website, video, etc.)</p>
+                </div>
+                
+                <div class="form-group" id="resource-file-group">
+                    <label for="resource-file">Upload Resource</label>
+                    <input type="file" id="resource-file" name="resource-file">
+                    <p class="help-text">Upload a PDF, image, or other file (max 10MB)</p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="tags">Tags (comma separated)</label>
+                    <input type="text" id="tags" name="tags">
+                    <p class="help-text">Add keywords to help others find your idea (e.g., grading, writing, collaboration)</p>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="btn primary">Submit Your Idea</button>
+                    <button type="reset" class="btn secondary">Clear Form</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 University of St. Thomas. All rights reserved.</p>
+                <a href="#" class="back-to-top" title="Back to Top">
+                    <i class="fas fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Submission Successful!</h3>
+            <p>Thank you for sharing your AI teaching experience. Your submission has been received and will be added to the Idea Book.</p>
+            <div class="modal-actions">
+                <button id="view-submissions" class="btn primary">View All Submissions</button>
+                <button id="submit-another" class="btn secondary">Submit Another Idea</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/submit.js"></script>
+    <script>
+        // Back to Top Button
+        const backToTopButton = document.querySelector('.back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
